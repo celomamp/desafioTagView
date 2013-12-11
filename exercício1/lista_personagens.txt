@@ -1,0 +1,23 @@
+Mario,herói,macho,humano
+Luigi,herói,macho,humano
+Peach,herói,fêmea,humano
+Toad,herói,macho,cogumelo
+Bowser,vilão,macho,dinossauro
+Yoshi,herói,macho,dinossauro
+Koopa,vilão,macho,tartaruga
+Goomba,vilão,macho,cogumelo
+Cheep Cheep,vilão,macho,peixe
+Dry Bones,vilão,macho,tartaruga 
+Link,herói,macho,humano
+Zelda,herói,fêmea,humano
+Ganondorf,vilão,macho,humano
+Epona,herói,fêmea,cavalo
+Poppy,herói,macho,cachorro
+Donkey Kong,herói,macho,macaco
+Diddy Kong,herói,macho,macaco
+Dixie,herói,fêmea,macaco
+Sonic,herói,macho,porco espinho
+Robotinic,vilão,macho,humano
+Tails,herói,macho,raposa
+Ryu,herói,macho,humano
+Chun-Li,herói,fêmea,humano
