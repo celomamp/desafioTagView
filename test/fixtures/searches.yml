@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 1
+  min_date: 2013-12-18
+  max_date: 2013-12-18
+
+two:
+  user_id: 1
+  min_date: 2013-12-18
+  max_date: 2013-12-18

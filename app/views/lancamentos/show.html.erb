@@ -1,0 +1,26 @@
+<div class="container">
+<p id="notice" class="text-success"><%= notice %></p>
+
+<p>
+  <strong>Responsável:</strong>
+  <%= @lancamento.user.nome %>
+</p>
+
+<p>
+  <strong>Data:</strong>
+  <%= @lancamento.data %>
+</p>
+
+<p>
+  <strong>Descrição:</strong>
+  <%= @lancamento.descricao %>
+</p>
+
+<p>
+  <strong>Valor:</strong>
+  <%= @lancamento.valor %>
+</p>
+
+<%= link_to 'Editar', edit_lancamento_path(@lancamento), :class => "btn btn-warning" %> |
+<%= link_to 'Voltar', lancamentos_path , :class => "btn btn-default" %>
+</div>

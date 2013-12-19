@@ -1,0 +1,62 @@
+<h1>Listando Lançamentos</h1>
+
+<!-- Filtering form -->
+
+<%= form_tag lancamentos_path, :class => "form-inline",:method => 'get' do %>
+  
+  <p class="form-group">
+    Responsável:
+  <%= select_tag :id_user, options_from_collection_for_select(User.all, 'id', 'nome'), include_blank: true %>
+    </p>
+    
+   
+    <p class="form-group">
+    Período de datas: <br>
+    <%= date_field_tag :min_date, :class => "form-control" %> à <%= date_field_tag :max_date, :class => "form-control"  %>
+    </p>
+  
+    <p class="form-group">
+   <br><%= submit_tag "Procurar", :name => nil, :class => "btn btn-success" %>
+  </p>
+<% end %>
+
+<!-- lancamentos table -->
+<table id="lancamentos" class="table table-hover">
+  <thead>
+    <tr>
+      <th>Responsável</th>
+      <th>Data</th>
+      <th>Descrição</th>
+      <th>Valor</th>
+      <th>Opções</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% 
+    total = 0
+    @lancamentos.each do |lancamento| %>
+      <tr>
+        <td><%= lancamento.user.nome %></td>
+        <td><%= lancamento.data %></td>
+        <td><%= lancamento.descricao %></td>
+        <td>R$ <%= lancamento.valor %></td>
+        <% total += lancamento.valor %>
+        <td><%= link_to 'Editar', edit_lancamento_path(lancamento) , :class => 'btn btn-warning'%>
+        <%= link_to 'Excluir', lancamento, method: :delete, data: { confirm: 'Are you sure?' }, :class => 'btn btn-danger' %></td>
+        
+      </tr>
+      <% end %>
+      <tr>
+      <td colspan='4' class="success">Total</td>
+      <td class='active'>R$ <%= total %></td>
+      </tr>
+    
+  </tbody>
+</table>
+
+<br>
+
+<p><%= link_to 'Novo Lançamento', new_lancamento_path , :class => 'btn btn-default'%></p>
+
+

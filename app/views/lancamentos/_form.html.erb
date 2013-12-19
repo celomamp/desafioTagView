@@ -1,0 +1,33 @@
+<%= form_for(@lancamento) do |f| %>
+  <% if @lancamento.errors.any? %>
+    <div id="error_explanation">
+      <h5><%= pluralize(@lancamento.errors.count, "erro") %> Impedem este registro de ser salvo:</h5>
+
+      <ul>
+      <% @lancamento.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= f.label :user_id %><br>
+    <%= f.collection_select(:user_id, User.all, :id, :nome)%>
+  </div>
+  <div class="form-group">
+    <%= f.label :data %><br>
+    <%= f.date_field :data, :class => "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :descricao %><br>
+    <%= f.text_area :descricao , :class => "form-control"%>
+  </div>
+  <div class="form-group">
+    <%= f.label :valor %><br>
+    <%= f.text_field :valor , :class => "form-control"%>
+  </div>
+  <div class="form-group">
+    <%= f.submit 'Cadastrar Lançamento' , :class => 'btn btn-primary' %>
+  </div>
+<% end %>

@@ -1,0 +1,16 @@
+<div id="container">
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @user.nome %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @user.email %>
+</p>
+
+<%= link_to 'Editar', edit_user_path(@user), :class => "btn btn-warning" %> |
+<%= link_to 'Voltar', users_path, :class => "btn btn-default"%>
+</div>

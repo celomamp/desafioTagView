@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tagview</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<ul class="nav nav-tabs"> 
+<li id="text"><%= link_to 'Responsáveis', users_path %></li>
+<li id="text"><%= link_to 'Lançamentos', lancamentos_path %></li>
+</ul>
+
+</script>
+<div class="container">
+
+<%= yield %>
+
+</div>
+
+</body>
+</html>

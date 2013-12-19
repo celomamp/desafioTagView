@@ -1,0 +1,28 @@
+<h1>Listando Responsáveis</h1>
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th id="titulo">Nome</th>
+      <th id="titulo">Email</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= user.nome %></td>
+        <td id="email"><%= user.email %></td>
+        <td><%= link_to 'Editar', edit_user_path(user), :class => "btn btn-warning" %>
+        <%= link_to 'Excluir', user, method: :delete, data: { confirm: 'Tem certeza?' } , :class => "btn btn-danger"%></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Novo Responsável', new_user_path , :class => "btn btn-default"%>
