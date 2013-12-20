@@ -23,6 +23,7 @@
   </tbody>
 </table>
 
+<%= will_paginate @products, previous_label: h("<"), next_label: h(">") %>
 <br>
 
 <%= link_to 'Novo Responsável', new_user_path , :class => "btn btn-default"%>

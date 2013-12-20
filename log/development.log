@@ -57001,3 +57001,851 @@ Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-12-20 12:05:52 -0200
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-20 12:05:52 -0200
+
+
+Started GET "/lancamentos?page=1" for 127.0.0.1 at 2013-12-20 12:19:26 -0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by LancamentosController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users`
+  [1m[36mLancamento Load (0.4ms)[0m  [1mSELECT `lancamentos`.* FROM `lancamentos` LIMIT 5 OFFSET 0[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM `lancamentos`
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  Rendered lancamentos/index.html.erb within layouts/application (59.1ms)
+Completed 200 OK in 1121ms (Views: 1079.8ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/dataTables/jquery.dataTables.css?body=1" for 127.0.0.1 at 2013-12-20 12:19:27 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-20 12:19:27 -0200
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-12-20 12:19:27 -0200
+
+
+Started GET "/assets/searches.css?body=1" for 127.0.0.1 at 2013-12-20 12:19:27 -0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-12-20 12:19:27 -0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-12-20 12:19:27 -0200
+
+
+Started GET "/assets/lancamentos.css?body=1" for 127.0.0.1 at 2013-12-20 12:19:27 -0200
+
+
+Started GET "/assets/jquery.ui.core.css?body=1" for 127.0.0.1 at 2013-12-20 12:19:27 -0200
+
+
+Started GET "/assets/jquery.ui.theme.css?body=1" for 127.0.0.1 at 2013-12-20 12:19:27 -0200
+
+
+Started GET "/assets/jquery.ui.accordion.css?body=1" for 127.0.0.1 at 2013-12-20 12:19:27 -0200
+
+
+Started GET "/assets/jquery.ui.menu.css?body=1" for 127.0.0.1 at 2013-12-20 12:19:27 -0200
+
+
+Started GET "/assets/jquery.ui.autocomplete.css?body=1" for 127.0.0.1 at 2013-12-20 12:19:27 -0200
+
+
+Started GET "/assets/jquery.ui.button.css?body=1" for 127.0.0.1 at 2013-12-20 12:19:27 -0200
+
+
+Started GET "/assets/jquery.ui.datepicker.css?body=1" for 127.0.0.1 at 2013-12-20 12:19:27 -0200
+
+
+Started GET "/assets/jquery.ui.resizable.css?body=1" for 127.0.0.1 at 2013-12-20 12:19:27 -0200
+
+
+Started GET "/assets/jquery.ui.dialog.css?body=1" for 127.0.0.1 at 2013-12-20 12:19:27 -0200
+
+
+Started GET "/assets/jquery.ui.progressbar.css?body=1" for 127.0.0.1 at 2013-12-20 12:19:27 -0200
+
+
+Started GET "/assets/jquery.ui.selectable.css?body=1" for 127.0.0.1 at 2013-12-20 12:19:27 -0200
+
+
+Started GET "/assets/jquery.ui.slider.css?body=1" for 127.0.0.1 at 2013-12-20 12:19:27 -0200
+
+
+Started GET "/assets/jquery.ui.spinner.css?body=1" for 127.0.0.1 at 2013-12-20 12:19:27 -0200
+
+
+Started GET "/assets/jquery.ui.tabs.css?body=1" for 127.0.0.1 at 2013-12-20 12:19:27 -0200
+
+
+Started GET "/assets/jquery.ui.tooltip.css?body=1" for 127.0.0.1 at 2013-12-20 12:19:27 -0200
+
+
+Started GET "/assets/jquery.ui.base.css?body=1" for 127.0.0.1 at 2013-12-20 12:19:27 -0200
+
+
+Started GET "/assets/jquery.ui.all.css?body=1" for 127.0.0.1 at 2013-12-20 12:19:27 -0200
+
+
+Started GET "/assets/dataTables/src/demo_table_jui.css?body=1" for 127.0.0.1 at 2013-12-20 12:19:27 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:27 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:27 -0200
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:27 -0200
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:27 -0200
+
+
+Started GET "/assets/jquery.ui.accordion.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:27 -0200
+
+
+Started GET "/assets/jquery.ui.position.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:27 -0200
+
+
+Started GET "/assets/jquery.ui.menu.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:27 -0200
+
+
+Started GET "/assets/jquery.ui.autocomplete.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:28 -0200
+
+
+Started GET "/assets/jquery.ui.button.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:28 -0200
+
+
+Started GET "/assets/jquery.ui.datepicker.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:28 -0200
+
+
+Started GET "/assets/jquery.ui.mouse.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:28 -0200
+
+
+Started GET "/assets/jquery.ui.dialog.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:28 -0200
+
+
+Started GET "/assets/jquery.ui.resizable.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:28 -0200
+
+
+Started GET "/assets/jquery.ui.droppable.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:28 -0200
+
+
+Started GET "/assets/jquery.ui.draggable.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:28 -0200
+
+
+Started GET "/assets/jquery.ui.effect.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:28 -0200
+
+
+Started GET "/assets/jquery.ui.effect-blind.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:28 -0200
+
+
+Started GET "/assets/jquery.ui.effect-bounce.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:28 -0200
+
+
+Started GET "/assets/jquery.ui.effect-clip.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:28 -0200
+
+
+Started GET "/assets/jquery.ui.effect-highlight.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:28 -0200
+
+
+Started GET "/assets/jquery.ui.effect-explode.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:28 -0200
+
+
+Started GET "/assets/jquery.ui.effect-fade.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:28 -0200
+
+
+Started GET "/assets/jquery.ui.effect-fold.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:28 -0200
+
+
+Started GET "/assets/jquery.ui.effect-drop.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:28 -0200
+
+
+Started GET "/assets/jquery.ui.effect-pulsate.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:28 -0200
+
+
+Started GET "/assets/jquery.ui.effect-scale.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:28 -0200
+
+
+Started GET "/assets/jquery.ui.effect-shake.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:28 -0200
+
+
+Started GET "/assets/jquery.ui.effect-slide.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:28 -0200
+
+
+Started GET "/assets/jquery.ui.effect-transfer.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:28 -0200
+
+
+Started GET "/assets/jquery.ui.progressbar.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:28 -0200
+
+
+Started GET "/assets/jquery.ui.selectable.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:28 -0200
+
+
+Started GET "/assets/jquery.ui.slider.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:28 -0200
+
+
+Started GET "/assets/jquery.ui.sortable.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:28 -0200
+
+
+Started GET "/assets/jquery.ui.spinner.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:28 -0200
+
+
+Started GET "/assets/jquery.ui.tabs.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:28 -0200
+
+
+Started GET "/assets/jquery.ui.tooltip.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:28 -0200
+
+
+Started GET "/assets/jquery.ui.all.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:28 -0200
+
+
+Started GET "/assets/dataTables/jquery.dataTables.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:28 -0200
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:28 -0200
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:28 -0200
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:28 -0200
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:28 -0200
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:28 -0200
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:28 -0200
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:28 -0200
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:28 -0200
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:28 -0200
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:28 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:28 -0200
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:28 -0200
+
+
+Started GET "/assets/searches.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:28 -0200
+
+
+Started GET "/assets/lancamentos.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:28 -0200
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:28 -0200
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:28 -0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:28 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:28 -0200
+
+
+Started GET "/lancamentos?page=2" for 127.0.0.1 at 2013-12-20 12:19:31 -0200
+Processing by LancamentosController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users`
+  [1m[36mLancamento Load (0.4ms)[0m  [1mSELECT `lancamentos`.* FROM `lancamentos` LIMIT 5 OFFSET 5[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 7 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered lancamentos/index.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 106ms (Views: 102.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/lancamentos?page=1" for 127.0.0.1 at 2013-12-20 12:19:33 -0200
+Processing by LancamentosController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users`
+  [1m[36mLancamento Load (0.4ms)[0m  [1mSELECT `lancamentos`.* FROM `lancamentos` LIMIT 5 OFFSET 0[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `lancamentos`
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  Rendered lancamentos/index.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 60ms (Views: 56.5ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/lancamentos?page=1" for 127.0.0.1 at 2013-12-20 12:19:40 -0200
+Processing by LancamentosController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users`
+  [1m[36mLancamento Load (0.1ms)[0m  [1mSELECT `lancamentos`.* FROM `lancamentos` LIMIT 5 OFFSET 0[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `lancamentos`
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  Rendered lancamentos/index.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 57ms (Views: 54.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/dataTables/jquery.dataTables.css?body=1" for 127.0.0.1 at 2013-12-20 12:19:40 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-20 12:19:40 -0200
+
+
+Started GET "/assets/lancamentos.css?body=1" for 127.0.0.1 at 2013-12-20 12:19:40 -0200
+
+
+Started GET "/assets/searches.css?body=1" for 127.0.0.1 at 2013-12-20 12:19:40 -0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/jquery.ui.core.css?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/jquery.ui.theme.css?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/jquery.ui.accordion.css?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/jquery.ui.menu.css?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/jquery.ui.autocomplete.css?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/jquery.ui.button.css?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/jquery.ui.dialog.css?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/jquery.ui.progressbar.css?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/jquery.ui.resizable.css?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/jquery.ui.datepicker.css?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/jquery.ui.selectable.css?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/jquery.ui.slider.css?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/jquery.ui.spinner.css?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/jquery.ui.tabs.css?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/jquery.ui.tooltip.css?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/jquery.ui.base.css?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/jquery.ui.all.css?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/dataTables/src/demo_table_jui.css?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/jquery.ui.accordion.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/jquery.ui.position.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/jquery.ui.autocomplete.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/jquery.ui.button.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/jquery.ui.menu.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/jquery.ui.datepicker.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/jquery.ui.mouse.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/jquery.ui.resizable.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/jquery.ui.dialog.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/jquery.ui.droppable.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/jquery.ui.draggable.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/jquery.ui.effect.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/jquery.ui.effect-clip.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/jquery.ui.effect-bounce.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/jquery.ui.effect-blind.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/jquery.ui.effect-drop.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/jquery.ui.effect-explode.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/jquery.ui.effect-fade.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/jquery.ui.effect-highlight.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/jquery.ui.effect-pulsate.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/jquery.ui.effect-fold.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/jquery.ui.effect-scale.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/jquery.ui.effect-shake.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/jquery.ui.effect-slide.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/jquery.ui.effect-transfer.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/jquery.ui.progressbar.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/jquery.ui.selectable.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/jquery.ui.slider.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/jquery.ui.sortable.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/jquery.ui.spinner.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/jquery.ui.tabs.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/jquery.ui.all.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/dataTables/jquery.dataTables.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/jquery.ui.tooltip.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/lancamentos.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/searches.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-20 12:19:41 -0200
+
+
+Started GET "/users" for 127.0.0.1 at 2013-12-20 12:19:44 -0200
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users`
+  Rendered users/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 55ms (Views: 52.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/lancamentos" for 127.0.0.1 at 2013-12-20 12:19:46 -0200
+Processing by LancamentosController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users`[0m
+  [1m[35mLancamento Load (0.3ms)[0m  SELECT `lancamentos`.* FROM `lancamentos` LIMIT 5 OFFSET 0
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `lancamentos`[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1  [["id", 1]]
+  Rendered lancamentos/index.html.erb within layouts/application (22.3ms)
+Completed 200 OK in 67ms (Views: 64.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/lancamentos" for 127.0.0.1 at 2013-12-20 12:20:48 -0200
+Processing by LancamentosController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users`[0m
+  [1m[35mLancamento Load (0.4ms)[0m  SELECT `lancamentos`.* FROM `lancamentos` LIMIT 5 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `lancamentos`[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1  [["id", 1]]
+  Rendered lancamentos/index.html.erb within layouts/application (47.1ms)
+Completed 200 OK in 150ms (Views: 138.4ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-20 12:20:48 -0200
+
+
+Started GET "/assets/lancamentos.css?body=1" for 127.0.0.1 at 2013-12-20 12:20:48 -0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-12-20 12:20:48 -0200
+
+
+Started GET "/assets/dataTables/jquery.dataTables.css?body=1" for 127.0.0.1 at 2013-12-20 12:20:48 -0200
+
+
+Started GET "/assets/searches.css?body=1" for 127.0.0.1 at 2013-12-20 12:20:48 -0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-12-20 12:20:48 -0200
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-12-20 12:20:48 -0200
+
+
+Started GET "/assets/jquery.ui.core.css?body=1" for 127.0.0.1 at 2013-12-20 12:20:48 -0200
+
+
+Started GET "/assets/jquery.ui.theme.css?body=1" for 127.0.0.1 at 2013-12-20 12:20:48 -0200
+
+
+Started GET "/assets/jquery.ui.accordion.css?body=1" for 127.0.0.1 at 2013-12-20 12:20:48 -0200
+
+
+Started GET "/assets/jquery.ui.menu.css?body=1" for 127.0.0.1 at 2013-12-20 12:20:48 -0200
+
+
+Started GET "/assets/jquery.ui.autocomplete.css?body=1" for 127.0.0.1 at 2013-12-20 12:20:48 -0200
+
+
+Started GET "/assets/jquery.ui.button.css?body=1" for 127.0.0.1 at 2013-12-20 12:20:48 -0200
+
+
+Started GET "/assets/jquery.ui.datepicker.css?body=1" for 127.0.0.1 at 2013-12-20 12:20:48 -0200
+
+
+Started GET "/assets/jquery.ui.resizable.css?body=1" for 127.0.0.1 at 2013-12-20 12:20:48 -0200
+
+
+Started GET "/assets/jquery.ui.dialog.css?body=1" for 127.0.0.1 at 2013-12-20 12:20:48 -0200
+
+
+Started GET "/assets/jquery.ui.selectable.css?body=1" for 127.0.0.1 at 2013-12-20 12:20:48 -0200
+
+
+Started GET "/assets/jquery.ui.progressbar.css?body=1" for 127.0.0.1 at 2013-12-20 12:20:48 -0200
+
+
+Started GET "/assets/jquery.ui.slider.css?body=1" for 127.0.0.1 at 2013-12-20 12:20:48 -0200
+
+
+Started GET "/assets/jquery.ui.tooltip.css?body=1" for 127.0.0.1 at 2013-12-20 12:20:48 -0200
+
+
+Started GET "/assets/jquery.ui.tabs.css?body=1" for 127.0.0.1 at 2013-12-20 12:20:48 -0200
+
+
+Started GET "/assets/jquery.ui.base.css?body=1" for 127.0.0.1 at 2013-12-20 12:20:49 -0200
+
+
+Started GET "/assets/jquery.ui.spinner.css?body=1" for 127.0.0.1 at 2013-12-20 12:20:49 -0200
+
+
+Started GET "/assets/dataTables/src/demo_table_jui.css?body=1" for 127.0.0.1 at 2013-12-20 12:20:49 -0200
+
+
+Started GET "/assets/jquery.ui.all.css?body=1" for 127.0.0.1 at 2013-12-20 12:20:49 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-20 12:20:49 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-20 12:20:49 -0200
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 127.0.0.1 at 2013-12-20 12:20:49 -0200
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2013-12-20 12:20:49 -0200
+
+
+Started GET "/assets/jquery.ui.accordion.js?body=1" for 127.0.0.1 at 2013-12-20 12:20:49 -0200
+
+
+Started GET "/assets/jquery.ui.position.js?body=1" for 127.0.0.1 at 2013-12-20 12:20:49 -0200
+
+
+Started GET "/assets/jquery.ui.menu.js?body=1" for 127.0.0.1 at 2013-12-20 12:20:49 -0200
+
+
+Started GET "/assets/jquery.ui.autocomplete.js?body=1" for 127.0.0.1 at 2013-12-20 12:20:49 -0200
+
+
+Started GET "/assets/jquery.ui.button.js?body=1" for 127.0.0.1 at 2013-12-20 12:20:49 -0200
+
+
+Started GET "/assets/jquery.ui.datepicker.js?body=1" for 127.0.0.1 at 2013-12-20 12:20:49 -0200
+
+
+Started GET "/assets/jquery.ui.mouse.js?body=1" for 127.0.0.1 at 2013-12-20 12:20:49 -0200
+
+
+Started GET "/assets/jquery.ui.resizable.js?body=1" for 127.0.0.1 at 2013-12-20 12:20:49 -0200
+
+
+Started GET "/assets/jquery.ui.draggable.js?body=1" for 127.0.0.1 at 2013-12-20 12:20:49 -0200
+
+
+Started GET "/assets/jquery.ui.droppable.js?body=1" for 127.0.0.1 at 2013-12-20 12:20:49 -0200
+
+
+Started GET "/assets/jquery.ui.dialog.js?body=1" for 127.0.0.1 at 2013-12-20 12:20:49 -0200
+
+
+Started GET "/assets/jquery.ui.effect.js?body=1" for 127.0.0.1 at 2013-12-20 12:20:49 -0200
+
+
+Started GET "/assets/jquery.ui.effect-bounce.js?body=1" for 127.0.0.1 at 2013-12-20 12:20:49 -0200
+
+
+Started GET "/assets/jquery.ui.effect-clip.js?body=1" for 127.0.0.1 at 2013-12-20 12:20:49 -0200
+
+
+Started GET "/assets/jquery.ui.effect-drop.js?body=1" for 127.0.0.1 at 2013-12-20 12:20:49 -0200
+
+
+Started GET "/assets/jquery.ui.effect-blind.js?body=1" for 127.0.0.1 at 2013-12-20 12:20:49 -0200
+
+
+Started GET "/assets/jquery.ui.effect-fade.js?body=1" for 127.0.0.1 at 2013-12-20 12:20:49 -0200
+
+
+Started GET "/assets/jquery.ui.effect-explode.js?body=1" for 127.0.0.1 at 2013-12-20 12:20:49 -0200
+
+
+Started GET "/assets/jquery.ui.effect-fold.js?body=1" for 127.0.0.1 at 2013-12-20 12:20:49 -0200
+
+
+Started GET "/assets/jquery.ui.effect-highlight.js?body=1" for 127.0.0.1 at 2013-12-20 12:20:49 -0200
+
+
+Started GET "/assets/jquery.ui.effect-pulsate.js?body=1" for 127.0.0.1 at 2013-12-20 12:20:49 -0200
+
+
+Started GET "/assets/jquery.ui.effect-scale.js?body=1" for 127.0.0.1 at 2013-12-20 12:20:49 -0200
+
+
+Started GET "/assets/jquery.ui.effect-shake.js?body=1" for 127.0.0.1 at 2013-12-20 12:20:49 -0200
+
+
+Started GET "/assets/jquery.ui.effect-slide.js?body=1" for 127.0.0.1 at 2013-12-20 12:20:49 -0200
+
+
+Started GET "/assets/jquery.ui.effect-transfer.js?body=1" for 127.0.0.1 at 2013-12-20 12:20:49 -0200
+
+
+Started GET "/assets/jquery.ui.slider.js?body=1" for 127.0.0.1 at 2013-12-20 12:20:49 -0200
+
+
+Started GET "/assets/jquery.ui.progressbar.js?body=1" for 127.0.0.1 at 2013-12-20 12:20:49 -0200
+
+
+Started GET "/assets/jquery.ui.selectable.js?body=1" for 127.0.0.1 at 2013-12-20 12:20:49 -0200
+
+
+Started GET "/assets/jquery.ui.sortable.js?body=1" for 127.0.0.1 at 2013-12-20 12:20:49 -0200
+
+
+Started GET "/assets/jquery.ui.tabs.js?body=1" for 127.0.0.1 at 2013-12-20 12:20:49 -0200
+
+
+Started GET "/assets/jquery.ui.spinner.js?body=1" for 127.0.0.1 at 2013-12-20 12:20:49 -0200
+
+
+Started GET "/assets/jquery.ui.tooltip.js?body=1" for 127.0.0.1 at 2013-12-20 12:20:49 -0200
+
+
+Started GET "/assets/jquery.ui.all.js?body=1" for 127.0.0.1 at 2013-12-20 12:20:49 -0200
+
+
+Started GET "/assets/dataTables/jquery.dataTables.js?body=1" for 127.0.0.1 at 2013-12-20 12:20:49 -0200
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2013-12-20 12:20:49 -0200
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2013-12-20 12:20:49 -0200
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2013-12-20 12:20:49 -0200
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2013-12-20 12:20:49 -0200
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2013-12-20 12:20:49 -0200
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2013-12-20 12:20:49 -0200
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2013-12-20 12:20:49 -0200
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2013-12-20 12:20:49 -0200
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2013-12-20 12:20:49 -0200
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2013-12-20 12:20:49 -0200
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2013-12-20 12:20:49 -0200
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-12-20 12:20:49 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-20 12:20:49 -0200
+
+
+Started GET "/assets/searches.js?body=1" for 127.0.0.1 at 2013-12-20 12:20:49 -0200
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2013-12-20 12:20:49 -0200
+
+
+Started GET "/assets/lancamentos.js?body=1" for 127.0.0.1 at 2013-12-20 12:20:49 -0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-12-20 12:20:49 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-20 12:20:49 -0200
+
+
+Started GET "/users" for 127.0.0.1 at 2013-12-20 12:21:26 -0200
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT `users`.* FROM `users` LIMIT 5 OFFSET 0[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM `users`
+  Rendered users/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 55ms (Views: 50.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users?page=2" for 127.0.0.1 at 2013-12-20 12:21:27 -0200
+Processing by UsersController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT `users`.* FROM `users` LIMIT 5 OFFSET 5[0m
+  Rendered users/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 114ms (Views: 112.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users?page=1" for 127.0.0.1 at 2013-12-20 12:21:30 -0200
+Processing by UsersController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` LIMIT 5 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+  Rendered users/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 49ms (Views: 47.7ms | ActiveRecord: 0.5ms)
