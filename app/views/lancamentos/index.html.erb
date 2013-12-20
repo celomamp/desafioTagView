@@ -55,6 +55,9 @@
   </tbody>
 </table>
 
+<%= will_paginate @products, previous_label: h("<"), next_label: h(">") %>
+
+
 <br>
 
 <p><%= link_to 'Novo Lançamento', new_lancamento_path , :class => 'btn btn-default'%></p>
