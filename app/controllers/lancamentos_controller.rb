@@ -5,7 +5,7 @@ class LancamentosController < ApplicationController
   # GET /lancamentos.json
   def index
 
-    @lancamentos = Lancamento.search(params[:id_user], params[:min_date], params[:max_date]).page(params[:page]).per_page(5)
+    @lancamentos = Lancamento.search(params[:id_user], params[:min_date], params[:max_date]).order("data DESC").page(params[:page]).per_page(5)
 
   end
 
